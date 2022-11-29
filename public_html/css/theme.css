@@ -481,8 +481,40 @@ footer {
   background-color: #c909de;
 }
 
-footer p {
+footer nav ul {
+  list-style: none;
+  margin-bottom: 30px;
+  padding-left: 0;
+}
+
+footer nav ul li a {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px 0;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
   color: #ffffff;
+}
+
+footer nav ul li a:hover, footer nav ul li a.active {
+  color: #00e645;
+}
+
+footer .copyright {
+  text-align: center;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav ul li a {
+    padding: 5px 5px;
+  }
 }
 
 /*# sourceMappingURL=theme.css.map */
