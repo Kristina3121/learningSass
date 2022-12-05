@@ -34,7 +34,7 @@
 
 .btn-success {
   background-color: #00e645;
-  color: #ffffff;
+  color: #000000;
 }
 
 .btn-success:hover {
@@ -43,7 +43,7 @@
 
 .btn-warning {
   background-color: #e6a100;
-  color: #ffffff;
+  color: #000000;
 }
 
 .btn-warning:hover {
