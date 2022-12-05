@@ -1,5 +1,19 @@
 
 @mixin radius($radius){
+
+    @if($enable-radius){
+        border-radius: $radius;
+        -moz-border-radius: $radius;
+        -webkit-border-radius: $radius;
+        -o-border-radius: $radius;
+    }
+    @else{
+        border-radius: 0px;
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+
     border-radius: $radius;
     -moz-border-radius: $radius;
     -webkit-border-radius: $radius;
@@ -7,7 +21,20 @@
 }
 
 @mixin customRadius($rtl, $rtr, $rbr, $rbl){
-    
+
+    @if($enable-radius){
+        border-radius: $rtl, $rtr, $rbr, $rbl;
+        -moz-border-radius: $rtl, $rtr, $rbr, $rbl;
+        -webkit-border-radius: $rtl, $rtr, $rbr, $rbl;
+        -o-border-radius: $rtl, $rtr, $rbr, $rbl;
+    }
+    @else{
+        border-radius: 0px;
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+
     border-radius: $rtl, $rtr, $rbr, $rbl;
     -moz-border-radius: $rtl, $rtr, $rbr, $rbl;
     -webkit-border-radius: $rtl, $rtr, $rbr, $rbl;
