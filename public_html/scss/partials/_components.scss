@@ -13,10 +13,9 @@ $btn-dark: $black;
     padding: 10px 25px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -o-border-radius: 5px;
+
+    //@include radius(5px);
+    @include customRadius(5px, 0, 5px, 0);
 
 }
 
@@ -24,7 +23,7 @@ $btn-dark: $black;
     @extend %btn;
     color: $btn-default-color;
     background-color: rgba($btn-default, 0.2);
-    
+
     &:hover{
         background-color: darken($btn-default, 10%);
     }
@@ -34,7 +33,7 @@ $btn-dark: $black;
     @extend %btn;
     background-color: $btn-danger;
     color: $btn-default-color;
-    
+
     &:hover{
         background-color: darken($btn-danger, 10%);
     }
@@ -44,8 +43,8 @@ $btn-dark: $black;
     @extend %btn;
     background-color: $btn-success;
     color: $btn-default-color;
-    
-        &:hover{
+
+    &:hover{
         background-color: darken($btn-success, 10%);
     }
 }
@@ -54,8 +53,8 @@ $btn-dark: $black;
     @extend %btn;
     background-color: $btn-warning;
     color: $btn-default-color;
-    
-        &:hover{
+
+    &:hover{
         background-color: darken($btn-warning, 10%);
     }
 }
@@ -64,8 +63,8 @@ $btn-dark: $black;
     @extend %btn;
     background-color: $btn-info;
     color: $btn-dark-color;
-    
-        &:hover{
+
+    &:hover{
         background-color: darken($btn-info, 10%);
     }
 }
@@ -74,8 +73,8 @@ $btn-dark: $black;
     @extend %btn;
     background-color: $btn-dark;
     color: $btn-default-color;
-    
-        &:hover{
+
+    &:hover{
         background-color: lighten($btn-dark, 10%);
     }
 }
